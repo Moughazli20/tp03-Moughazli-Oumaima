@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'TP03-MOUGHAZLI-Oumaima'`, () => {
+  it(`should have as title 'tp03_MOUGHAZLI_Oumaima'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('TP03-MOUGHAZLI-Oumaima');
+    expect(app.title).toEqual('tp03_MOUGHAZLI_Oumaima');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('TP03-MOUGHAZLI-Oumaima app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('tp03_MOUGHAZLI_Oumaima app is running!');
   });
 });
